@@ -1,0 +1,47 @@
+{
+	"name": "AccessLogReports",
+	"namemsg": "accesslogreports-extensionname",
+	"license-name": "GPL-3.0+",
+	"version": "0.1",
+	"author": [
+		"[//mwstake.org Mark A. Hershberger]"
+	],
+	"requires": {
+		"MediaWiki": ">=1.26"
+	},
+	"url": "https://www.mediawiki.org/wiki/Extension:AccessLogReports",
+	"descriptionmsg": "accesslogreports-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"AccessLogReports": "AccessLogReports\\SpecialAccessLogReports"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"AccessLogReports\\Hook::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"AutoloadClasses": {
+		"AccessLogReports\\SpecialAccessLogReports": "src/SpecialAccessLogReports.php",
+		"AccessLogReports\\Hook": "src/Hook.php"
+	},
+	"MessagesDirs": {
+		"AccessLogReports": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"AccessLogReportsAlias": "src/i18n/Alias.php"
+	},
+	"AvailableRights": [
+		"viewaccesslogs"
+	],
+	"GroupPermissions": {
+		"sysop": {
+			"viewaccesslogs": true
+		}
+	},
+	"config": {
+	},
+
+	"manifest_version": 1
+}

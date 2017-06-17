@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"right-viewaccesslogs": "[[Special:AccessLogReports|View the access logs]]",
+	"action-viewaccesslogs": "view the access log",
+	"accesslogreports": "Access Log Reports",
+	"accesslogreports-title": "Page",
+	"accesslogreports-extensionname": "Access Log Reports",
+	"accesslogreports-desc": "View the access logs from mod_log_sql"
+}

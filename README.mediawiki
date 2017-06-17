@@ -1,0 +1,7 @@
+The '''AccessLogReports'’ provides a special page to view and query the access logs when they are stored in a database.  It is built on, and compatible with, the schema from [http://www.outoforder.cc/projects/httpd/mod_log_sql/ mod_log_sql].
+
+== Installation Instructions ==
+
+== Known Issues ==
+
+== Revisions ==
